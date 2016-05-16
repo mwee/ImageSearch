@@ -1,0 +1,14 @@
+alembic==0.8.6
+clarifai==0.2.1
+Flask==0.10.1
+Flask-Migrate==1.8.0
+Flask-Script==2.0.5
+Flask-SQLAlchemy==2.1
+Jinja2==2.8
+Pillow==3.2.0
+psycopg2==2.6.1
+requests==2.9.1
+Scrapy==1.1.0
+SQLAlchemy==1.0.12
+Twisted==16.1.1
+Werkzeug==0.11.2

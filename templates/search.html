@@ -1,0 +1,7 @@
+<!doctype html>
+<title>Image Search</title>
+<h1>Image Search</h1>
+<form action="{{ url_for('search') }}">
+    <input type=text name=keywords value="{{ request.form.search }}" placeholder="Search Here" autocomplete="off" autofocus="autofocus" type="text"></br>
+    <input type=submit>
+</form>

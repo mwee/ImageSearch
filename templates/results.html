@@ -1,0 +1,16 @@
+<!doctype html>
+<title>Results</title>
+<!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">-->
+<div class=page>
+  <h1>Results {% if request.args.get('keywords') is not none %} for: {{ request.args.get('keywords') }} {% endif %}</h1>
+  <div class=metanav>
+  </div>
+  {% for tuple in results %}
+  <div>
+    <a href="{{ tuple[0] }}"> {{ tuple[0] }}</a><br>
+    <a href="{{ tuple[1] }}"><img src="{{ tuple[1] }}" width=200> </img></a>
+  </div>
+  <br>
+  {% endfor %}
+  {% block body %}{% endblock %}
+</div>
